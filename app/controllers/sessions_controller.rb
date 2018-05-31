@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
       current_user(@user)
       redirect_to user_path(@user)
     else
-      redirect_to login_path
+      redirect_to user_path
     end
   end
 end
